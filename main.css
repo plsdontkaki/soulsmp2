@@ -68,8 +68,8 @@ button:hover {
     min-height: 8vh;
     padding-right: 1vw;
     padding-left: 1vw;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 span {
