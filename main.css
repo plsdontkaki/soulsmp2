@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+:root {
+    font-family: 'Minecraft', sans-serif;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/minecraft.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 1rem 0 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+    background-image: linear-gradient(0.45turn, rgb(78, 0, 78), rgb(37, 0, 80));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 25vw;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    line-height: 1.1;
+    margin: 0;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.247);
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 0.8rem 1.1rem;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Minecraft', sans-serif;
+}
+
+button:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.438);
+    transform: translateY(-1px);
+}
+
+.tagok-btn {
+    min-height: 6.8vh;
+}
+
+span {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+p {
+    color: white;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    line-height: 1.6;
+    margin: 0.75rem 0;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.buttons a {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: min(90vw, 1200px);
+    padding: 0 1rem;
+}
+
+.card,
+.plugin {
+    background-color: rgba(121, 121, 121, 0.253);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    padding: 1.5rem;
+    word-break: break-word;
+    width: 100%;
+    max-width: 700px;
+    min-width: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+
+.card:hover,
+.plugin:hover,
+.member-card:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.438);
+}
+
+.plugin {
+    overflow-y: auto;
+    max-height: 75vh;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+    justify-content: center;
+    gap: 1.5rem;
+    width: min(90vw, 1200px);
+    padding: 1rem 1rem 3rem;
+}
+
+.member-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgba(121, 121, 121, 0.253);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    padding: 1rem 0.75rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-card iframe {
+    width: 100%;
+    aspect-ratio: 140 / 220;  
+    max-width: 380px;          
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+.member-card:hover iframe {
+    pointer-events: auto;
+}
+
+.member-name {
+    color: white;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    margin: 0.5rem 0 0.2rem;
+    word-break: break-word;
+}
+
+.member-dc {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: clamp(0.7rem, 0.9vw, 0.85rem);
+    word-break: break-word;
+}
+
+.dc-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 3px;
+    opacity: 0.6;
+}
+
+h1.page-title {
+    color: white;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.footer{
+    font-family: 'Minecraft',sans-serif;
+    color: rgb(77, 77, 77);
+}
+
+@media (max-width: 900px) {
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons a {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .buttons button {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem 0 2.5rem;
+    }
+
+    img {
+        max-width: 55vw;
+    }
+
+    .buttons {
+        gap: 0.75rem;
+    }
+
+    span{}
+
+    .buttons button {
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .container,
+    .members-grid {
+        width: 100%;
+        padding: 0 1.25rem 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .plugin {
+        padding: 1.25rem;
+    }
+
+    .member-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem 1.25rem 1.75rem;
+    }
+
+    .member-card iframe {
+        width: 60%;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    .member-name {
+        font-size: 1.1rem;
+        margin-top: 0.75rem;
+    }
+
+    .member-dc {
+        font-size: 0.95rem;
+    }
+
+    h1.page-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .buttons {
+        position: relative;
+        width: 100%;
+        padding: 0 1rem;
+        justify-content: flex-end;
+    }
+
+    .tagok-btn {
+        min-height: 12vh;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 200px));
+        width: min(95vw, 1400px);
+    }
+
+    .member-card {
+        max-width: 100%;
+    }
+
+    .member-card iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .buttons {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: auto;
+        padding: 0 1rem 0 0;
+    }
+
+    .buttons,
+    .container,
+    .members-grid {
+        width: min(90vw, 1800px);
+    }
+}
+
+.plugin::-webkit-scrollbar {
+    width: 6px;
+    height: 30px;
+}
+
+.plugin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.plugin::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+
+.plugin::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
