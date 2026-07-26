@@ -1,7 +1,7 @@
 const members = [
     { uuid: "ce47d2ad-6147-401e-a2a0-15d916e124e2", discord: "notjustbeni" },
     { uuid: "aa61e8a1-2462-48d2-986d-5d1108b7ff81", discord: "tiankrisz" },
-    { uuid: "fa7f9b3b-61d0-470e-9c2e-9a02d6cf9e34", discord: "andis_969" },
+    { uuid: "fa7f9b3b-61d0-470e-9c2e-9a02d6cf9e34", discord: "andis969" },
     { uuid: "14611309-a3f5-4c80-8e29-1fd2d8eef410", discord: "mixerr3alt" },
     { uuid: "3cd7f125-d0ff-4aa6-883b-372b5186b71b", discord: "norbi6794" },
     { uuid: "aa3d752c-27d7-4702-b2d0-6169addd058e", discord: "lazarka0580" },
@@ -35,7 +35,15 @@ const members = [
     { uuid: "93fc2921-0cc5-42ea-839f-4f8c98714366", discord: "krisi10" },
     { uuid: "ae171a6a-1e4d-4435-9e0f-a268279cb122", discord: "lorinc21" },
     { uuid: "370bf707-5057-4af9-a770-26a91e6f7c15", discord: "mate003591" },
-    { uuid: "f3fa0d90-fc72-48bc-9c0e-2c3583dc7069", discord: "kenez_88" }
+    { uuid: "f3fa0d90-fc72-48bc-9c0e-2c3583dc7069", discord: "kenez_88" },
+    { uuid: "a6ea848f-1b1a-49d8-addc-be906a4e8aea", discord: "bandii15" },
+    { uuid: "0b8e6da0-eeec-4c02-95f3-86322933cf1e", discord: "skyhunter1720" },
+    { uuid: "8fbc222a-1c4e-404b-bab3-ac1978644fd1", discord: "dsrki" },
+    { uuid: "506da2ad-ebe9-45f4-8c9f-0e7b9fe962d9", discord: "cooldoge1" },
+    { uuid: "6c02ce3e-54cf-42f4-b60d-6b03ce75ff41", discord: "yeastyfood." },
+    { uuid: "f6fe0cc3-5f77-418e-91c1-6d1e62aa198f", discord: "djbalna" },
+    { uuid: "3a5b8c36-b845-4dc1-b74b-18a83ea6829c", discord: "fiziptunusz" }
+    
 ];
 
 async function createMembers() {

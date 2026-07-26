@@ -14,6 +14,13 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -110,7 +117,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 3rem;
     width: min(90vw, 1800px);
     padding: 0 1rem;
 }
@@ -118,14 +125,14 @@ p {
 .card,
 .plugin {
     background-color: rgba(121, 121, 121, 0.253);
-    border-radius: 25px;
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.438);
     text-align: center;
     transition: box-shadow 0.3s ease;
     padding: 1.5rem;
     word-break: break-word;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     min-width: 0;
 }
 
@@ -151,12 +158,13 @@ a{
     justify-content: center;
     gap: 1.5rem;
     padding: 1rem 1rem 3rem;
-    width: min(90vw, 1800px);
+    width: min(80vw, 1800px);
 }
 
 .member-card {
     width: 100%;
-    max-width: 420px;
+    max-width: 250px;
+    max-height: auto;
     background-color: rgba(121, 121, 121, 0.253);
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.438);
