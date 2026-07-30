@@ -126,7 +126,7 @@ p {
 .plugin {
     background-color: rgba(121, 121, 121, 0.253);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.438);
+    border: 2px solid rgba(255, 255, 255, 0.438);
     text-align: center;
     transition: box-shadow 0.3s ease;
     padding: 1.5rem;
