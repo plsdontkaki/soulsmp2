@@ -40,7 +40,6 @@ const members = [
     { uuid: "6c02ce3e-54cf-42f4-b60d-6b03ce75ff41", discord: "yeastyfood." },
     { uuid: "f6fe0cc3-5f77-418e-91c1-6d1e62aa198f", discord: "djbalna" },
     { uuid: "3a5b8c36-b845-4dc1-b74b-18a83ea6829c", discord: "fiziptunusz" }
-    
 ];
 
 async function createMembers() {
